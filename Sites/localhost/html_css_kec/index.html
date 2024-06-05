@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="container">
+        <form action="nabin.php" method="post">
+          <h1>My Page</h1>
+          <h4>Fill up the Information:</h4>
+          <div class="div-info">
+            <div class="Name">
+              <div class="name1">
+                <label for="name">Name: </label>
+                <p>*</p>
+              </div>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your Name"
+                class="inputplace"
+              />
+            </div>
+            <div class="Phoneno">
+              <div class="phoneno1">
+                <label for="phoneno">Phoneno:</label>
+                <p>*</p>
+              </div>
+
+              <input
+                type="text"
+                id="phoneno"
+                placeholder="Enter your Phoneno"
+                name="phoneno"
+                class="inputplace"
+              />
+            </div>
+            <div class="Email">
+              <div class="email1">
+                <label for="email">Email:</label>
+                <p>*</p>
+              </div>
+
+              <input
+                type="text"
+                id="email"
+                placeholder="Enter your Email"
+                name="email"
+                class="inputplace"
+              />
+            </div>
+            <div class="Address">
+              <div class="address1">
+                <label for="address">Address:</label>
+                <p>*</p>
+              </div>
+
+              <input
+                type="text"
+                id="address"
+                placeholder="Enter your Address"
+                name="address"
+                class="inputplace"
+              />
+            </div>
+          </div>
+          <div class="Select-gender">
+            <h4>Select Gender:</h4>
+            <div class="inside-gender">
+              <div class="male">
+                <input
+                  type="radio"
+                  class="gender"
+                  name="gender"
+                  value="m"
+                  id="male"
+                />
+                <label for="gender">Male</label>
+              </div>
+              <div class="female">
+                <input
+                  type="radio"
+                  class="gender"
+                  name="gender"
+                  value="f"
+                  id="female"
+                />
+                <label for="gender">Female</label>
+              </div>
+              <div class="others">
+                <input
+                  type="radio"
+                  class="gender"
+                  name="gender"
+                  value="o"
+                  id="others"
+                />
+                <label for="gender">Others</label>
+              </div>
+            </div>
+          </div>
+          <div class="Skills">
+            <h4>Skills:</h4>
+            <div class="problem">
+              <label for="skills">Problem Solving</label>
+              <input type="checkbox" id="skills" name="Art" value="talent" />
+            </div>
+            <div class="communication">
+              <label for="skills">Communication</label>
+              <input type="checkbox" id="skills" name="Coding" value="talent" />
+            </div>
+            <div class="confidence">
+              <label for="skills">Confidence</label>
+
+              <input
+                type="checkbox"
+                id="skills"
+                name="BasketBall"
+                value="talent"
+              />
+            </div>
+            <div class="collaboration">
+              <label for="skills">Collaboration</label>
+              <input
+                type="checkbox"
+                id="skills"
+                name="Singing"
+                value="talent"
+              />
+            </div>
+
+            <div class="decision">
+              <label for="skills">Decision Making</label>
+              <input
+                type="checkbox"
+                id="skills"
+                name="Singing"
+                value="talent"
+              />
+            </div>
+          </div>
+          <div class="Hobbies">
+            <h4>Hobbies:</h4>
+            <div class="dancing">
+                     <label>Dancing</label>
+                       <input type="checkbox" name="dancing" id="dancing" />
+            </div>
+          <div class="eating">
+               <label>Eating</label>
+                  <input type="checkbox" name="eating" id="eating" />
+          </div>
+       <div class="cooking">
+            <label>Cooking</label>
+            <input type="checkbox" name="cooking" id="cooking" />
+       </div>
+         
+
+        
+          </div>
+          <div class="Country">
+            <h4>Choose a country:</h4>
+            <select name="country" id="country">
+              <option value="nepal">Nepal</option>
+              <option value="india">India</option>
+              <option value="china">China</option>
+              <option value="usa">Usa</option>
+              <option value="uk">UK</option>
+              <option value="usa">Russia</option>
+            </select>
+          </div>
+
+          <div class="Button">
+            <!-- <input
+              type="button"
+              value="Submit"
+              onclick="submit()"
+              class="submit"
+            />
+            <input
+              type="button"
+              value="click"
+              onclick="displayName()"
+              class="click"
+            /> -->
+
+            <button onclick="displayName()">Sign In</button>
+          </div>
+          <p class="man"></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
