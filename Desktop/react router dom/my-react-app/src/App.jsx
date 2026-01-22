@@ -3,25 +3,37 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/home";
 import About from "./components/About";
+import User from "./components/User";
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
-      element: <Home />,
+      path: "/about",
+      element: (
+        <>
+          <Navbar />
+          <About />,
+        </>
+      ),
     },
     {
-      path: "/about",
-      element: <About />,
+      path: "/",
+      element: (
+        <>
+          <Navbar />
+          <Home />,
+        </>
+      ),
+    },
+
+    {
+      path: "/user/:nabin",
+      element: <User />,
     },
   ]);
   return (
     <>
-      <div>Hello world</div>
-      <div>
-        <Navbar />
-        <RouterProvider router={router} />
-      </div>
+      <RouterProvider router={router} />
     </>
   );
 }
